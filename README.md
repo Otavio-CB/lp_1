@@ -1,1 +1,2 @@
-# lp_1
+# Exercícios de Java - LP 1
+Este é o repositório de exercícios de Java propostos durante nossas aulas. Aqui você encontrará uma série de desafios práticos. Esses exercícios abrangem uma variedade de conceitos importantes da linguagem Java e da programação orientada a objetos.
