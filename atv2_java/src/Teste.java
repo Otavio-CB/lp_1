@@ -67,5 +67,11 @@ public class Teste {
         restaurante.abrir();
         restaurante.exibirDetalhes();
         restaurante.fechar();
+
+        System.out.println("==== Teste da Classe Restaurante 2 ====");
+        Restaurante r1 = new Restaurante("Restaurante da Vovó Zizi", "Mineira", 100);
+        r1.abrir();
+        r1.exibirDetalhes();
+        System.out.println(r1.getTipoCozinha());
     }
 }
