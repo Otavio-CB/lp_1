@@ -9,7 +9,6 @@ public class Exerc79 {
         double[] notas = new double[20];
         double soma = 0;
 
-        // Leitura das notas
         System.out.println("Digite as notas dos 20 alunos:");
         for (int i = 0; i < 20; i++) {
             System.out.print("Nota do aluno " + (i + 1) + ": ");
@@ -17,10 +16,8 @@ public class Exerc79 {
             soma += notas[i];
         }
 
-        // Calcula a média da turma
         double media = soma / 20;
 
-        // Conta quantos alunos obtiveram nota acima da média
         int acimaMedia = 0;
         for (double nota : notas) {
             if (nota > media) {
@@ -28,7 +25,6 @@ public class Exerc79 {
             }
         }
 
-        // Exibe a média da turma e o resultado da contagem
         System.out.println("Média da turma: " + media);
         System.out.println("Alunos com nota acima da média: " + acimaMedia);
         scanner.close();
@@ -42,7 +38,6 @@ class Exerc79_2 {
         List<Double> notas = new ArrayList<>();
         double soma = 0;
 
-        // Leitura das notas
         System.out.println("Digite as notas dos 20 alunos:");
         for (int i = 0; i < 20; i++) {
             System.out.print("Nota do aluno " + (i + 1) + ": ");
@@ -51,10 +46,8 @@ class Exerc79_2 {
             soma += nota;
         }
 
-        // Calcula a média da turma
         double media = soma / 20;
 
-        // Conta quantos alunos obtiveram nota acima da média
         int acimaMedia = 0;
         for (double nota : notas) {
             if (nota > media) {
@@ -62,7 +55,6 @@ class Exerc79_2 {
             }
         }
 
-        // Exibe a média da turma e o resultado da contagem
         System.out.println("Média da turma: " + media);
         System.out.println("Alunos com nota acima da média: " + acimaMedia);
         scanner.close();

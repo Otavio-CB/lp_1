@@ -41,7 +41,6 @@ class Exerc78_2 {
 
         List<String> nomes = new ArrayList<>();
 
-        // Leitura dos nomes
         System.out.println("Digite os nomes das 10 pessoas:");
         for (int i = 0; i < 10; i++) {
             System.out.print("Nome " + (i + 1) + ": ");
@@ -49,14 +48,11 @@ class Exerc78_2 {
             nomes.add(nome);
         }
 
-        // Leitura do nome a ser pesquisado
         System.out.print("Digite um nome para buscar: ");
         String nomeBusca = scanner.nextLine();
 
-        // Verifica se o nome está na lista
         boolean encontrado = nomes.contains(nomeBusca);
 
-        // Exibe o resultado da busca
         if (encontrado) {
             System.out.println("ACHEI");
         } else {
