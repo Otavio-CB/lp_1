@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #272727;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.crud.view.TodoTaskController">
+   <children>
+      <Text fill="WHITE" layoutX="60.80000000000001" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todo List">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameDescription" layoutX="70.0" layoutY="103.0" onAction="#addNameDescription" prefHeight="26.0" prefWidth="368.0" promptText="Insira a descrição" AnchorPane.leftAnchor="60.80000000000001" AnchorPane.rightAnchor="60.80000000000001" />
+      <DatePicker fx:id="initialDate" layoutX="61.0" layoutY="185.0" onAction="#addInitialDate" prefHeight="26.0" prefWidth="183.0" promptText="Insira a Data Inicial" />
+      <Line endX="74.00001525878906" layoutX="162.0" layoutY="154.0" startX="-100.0" stroke="WHITE" />
+      <Button fx:id="buttonAddTask" layoutX="316.0" layoutY="246.0" mnemonicParsing="false" onAction="#addTaskOnTable" prefHeight="14.0" prefWidth="103.0" style="-fx-background-radius: 5;" text="Adicionar Tarefa" AnchorPane.rightAnchor="61.0">
+         <font>
+            <Font name="Segoe UI Light" size="12.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="finalDate" layoutX="256.0" layoutY="185.0" onAction="#addFinalDate" prefHeight="26.0" prefWidth="183.0" promptText="Insira a Data Final" />
+   </children>
+</AnchorPane>

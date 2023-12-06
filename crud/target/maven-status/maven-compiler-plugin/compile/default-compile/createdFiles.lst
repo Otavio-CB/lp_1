@@ -1,0 +1,5 @@
+com\crud\controller\TaskDAO.class
+com\crud\model\connection\ConnectionDatabase.class
+com\crud\Main.class
+com\crud\controller\TaskController.class
+com\crud\controller\Task.class
