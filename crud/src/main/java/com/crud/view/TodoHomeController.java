@@ -83,12 +83,12 @@ public class TodoHomeController {
         initialDate.setCellValueFactory(new PropertyValueFactory<>("creationDate"));
         finalDate.setCellValueFactory(new PropertyValueFactory<>("completionDate"));
         delete.setCellFactory(col -> new DeleteButtonCell());
+        tableTasks.setItems(taskList);
     }
 
     private void loadTaskData() {
         taskList.forEach(taskModel -> taskList.remove(taskModel));
         taskDAO.listTasks().forEach(task -> taskList.add(new TaskModel(task)));
-        tableTasks.setItems(taskList);
     }
 
     @FXML
